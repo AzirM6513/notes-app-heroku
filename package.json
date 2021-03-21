@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd ../../fs-open-2021/sandbox/ && npm run build --prod && cp -r build ../../javascript/notes-app-heroku",
-    "deploy:full": "npm run build:ui && git add . && git commit -m ui build && git push && npm run deploy",
+    "deploy:full": "npm run build:ui && git add . && git commit -m ui build && git push && git push",
     "logs:prod": "heroku logs --tail"
   },
   "author": "Mena Azir",
